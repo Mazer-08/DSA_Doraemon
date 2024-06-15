@@ -10,19 +10,19 @@ string leReString(int x){
     // return to_string(x);
 
     // way3
-    stringstream ss;
-    ss << x;
-    return ss.str();
+    // stringstream ss;
+    // ss << x;
+    // return ss.str();
 }
 
 int leReInt(string s){
     // way1  
     // use **atol** for long integer
-    char str[50];
-    for(int i=0; i<s.length(); i++){
-        str[i] = s[i];
-    }
-    return atoll(str);
+    // char str[50];
+    // for(int i=0; i<s.length(); i++){
+    //     str[i] = s[i];
+    // }
+    // return atoll(str);
 
     // way2
     // return stoll(s, nullptr, 16);

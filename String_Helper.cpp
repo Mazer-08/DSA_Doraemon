@@ -7,7 +7,7 @@ string leReString(int x){
     // return (itoa(x, s, 10));
 
     // way2
-    // return to_string(x);
+    return to_string(x);
 
     // way3
     // stringstream ss;
@@ -25,7 +25,7 @@ int leReInt(string s){
     // return atoll(str);
 
     // way2
-    // return stoll(s, nullptr, 16);
+    return stoll(s, nullptr, 10);
     // return stoi(s, nullptr, 16);
     
 }
@@ -35,9 +35,9 @@ void solve(){
     string stringOutput = leReString(intInput);
     cout<<stringOutput<<endl;
 
-    string hola = "99999";
-    int hihi = leReInt(hola);
-    cout<<hihi<<endl;
+    string stringInput = "99999";
+    int intOutput = leReInt(stringInput);
+    cout<<intOutput<<endl;
 }
  
  

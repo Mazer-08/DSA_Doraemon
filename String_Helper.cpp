@@ -75,17 +75,28 @@ string leReString(int x){
 }
 
 int leReInt(string s){
-    // way1
+    // way1  
+    // use **atol** for long integer
+    char str[50];
+    for(int i=0; i<s.length(); i++){
+        str[i] = s[i];
+    }
+    return atoll(str);
+
+    // way2
+    // return stoll(s, nullptr, 16);
+    // return stoi(s, nullptr, 16);
+    
 }
  
 void solve(){
-    int intInput = 10;
-    string stringOutput = leReString(intInput);
-    cout<<stringOutput<<endl;
+    // int intInput = 10;
+    // string stringOutput = leReString(intInput);
+    // cout<<stringOutput<<endl;
 
-    // string hola = "69";
-    // int hihi = leReInt(hola);
-    // cout<<hihi<<endl;
+    string hola = "99999";
+    int hihi = leReInt(hola);
+    cout<<hihi<<endl;
 }
  
  

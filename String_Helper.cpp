@@ -31,13 +31,19 @@ int leReInt(string s){
 }
  
 void solve(){
-    int intInput = 10;
-    string stringOutput = leReString(intInput);
-    cout<<stringOutput<<endl;
+    // int intInput = 10;
+    // string stringOutput = leReString(intInput);
+    // cout<<stringOutput<<endl;
 
-    string stringInput = "99999";
-    int intOutput = leReInt(stringInput);
-    cout<<intOutput<<endl;
+    // string stringInput = "99999";
+    // int intOutput = leReInt(stringInput);
+    // cout<<intOutput<<endl;
+
+    // Insert at any position
+    // .insert(i, str) where i = index at which new string is to be inserted, str = new string
+    string b4Insert = "World";
+    string afterInsert = b4Insert.insert(0, "Hello ");
+    cout<<afterInsert<<endl;
 }
  
  
